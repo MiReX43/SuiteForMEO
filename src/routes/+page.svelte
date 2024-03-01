@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Денис Гиревой</title>
+    <title>MirFilms</title>
 </svelte:head>
 
 <div class='container'>
@@ -8,15 +8,14 @@
             <div class='container info-container'>
                 <div class='info-text'>
                     <h1>
-                        <p class='animate-text-1'>Lorem ipsum dolor sit,</p>
-                        <p class='text-2'>Lorem ipsum dolor sit amet.</p>
+                        <p class='animate-text-1'>Только лучшие филмы</p>
+                        <p class='text-2'>В нашем кинотиатре</p>
                     </h1>
                 </div>
                 <h2 class='subtitle'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut, cupiditate dolores  ducimus expedita labore nemo odio quibusdam quidem sapiente soluta. 
-                </h2>
+                    "Добро пожаловать в наш кинотеатр! Насладитесь неповторимой атмосферой кинематографа в самом сердце города. Откройте для себя широкий выбор фильмов различных жанров: от захватывающих блокбастеров до утонченных инди-произведений. Наши современные кинозалы оснащены передовой звуковой и видео техникой, чтобы каждый просмотр стал незабываемым событием. Приходите вместе с друзьями или семьей и окунитесь в мир киноискусства вместе с нами!"                </h2>
                 <div style='color:black' class='scroll-button animate-scroll' tabindex="0">
-                    <a href='/about'>Click Here</a>
+                    <a href='/blog'>Сейчас в кино</a>
                     <div class='arrow'>→</div>
                 </div>
             </div>
@@ -24,6 +23,7 @@
     </div>
 </div>
 <div class='background-div'></div>
+
 
 
 <style> .info {
@@ -40,7 +40,7 @@
     }
     .container {
     max-width: 1400px;
-    margin: 190px 0 0 2.5rem;
+    margin: 50px 0 0 2.5rem;
     }
     .info h1 {
     font-size: 4rem;
@@ -62,13 +62,17 @@
     margin-top: 0.50rem;
     }
     .background-div {
-    background-color: #ecebe8;
+    background-color: #999999;
     width: 100%;
-    height: 56vh;
-    margin: -205px auto;
+    height: 57vh;
+    margin: -320px auto;
     }
     .info .info-text {
     position: relative;
+    }
+
+    .info-text {
+        position: fixed;
     }
     .scroll-button { 
     display: flex;
@@ -78,5 +82,12 @@
     }
     .scroll-button .arrow {
     margin-left: 0.50rem;
+    }
+
+    .animate-text-1 {
+        color: white;
+    }
+    .text-2 {
+        color: white;
     }
     </style>
