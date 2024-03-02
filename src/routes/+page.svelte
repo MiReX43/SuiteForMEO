@@ -8,8 +8,8 @@
             <div class='container info-container'>
                 <div class='info-text'>
                     <h1>
-                        <p class='animate-text-1'>Только лучшие филмы</p>
-                        <p class='text-2'>В нашем кинотиатре</p>
+                        <p class='animate-text-1'>Только лучшие фильмы</p>
+                        <p class='text-2'>В нашем кинотеатре</p>
                     </h1>
                 </div>
                 <h2 class='subtitle'>
