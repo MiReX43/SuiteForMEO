@@ -20,14 +20,18 @@
 <div class='background-div'>
 <div class="blogposts">
     {#each routes as page} 
-        <div class="post"> 
-            <h2>{page.title}</h2>
-            <p>{page.body}</p>
-            <p class="readmore">
-                <a class="link" href={`/blog/posts/${page.id}`}>
-                    Читать далее
-                </a>
-            </p>
+        <div class="post">
+            <img src={page.image} alt="Image" />
+            <div class="post-content">
+                <h3>{page.title}</h3>
+                <p><b>Год выпуска: </b>{page.st1}</p>
+                <p><b>Страна: </b>{page.st2}</p>
+                <p><b>Жанр: </b>{page.st3}</p>
+                <p><b>Продолжительность: </b>{page.st4}</p>
+                <p><b>Режиссер: </b>{page.st5}</p>
+                <p><b>Актеры: </b>{page.st6}</p>
+                <p>{page.body}</p>
+            </div>
         </div>
     {/each}
 </div>
@@ -47,22 +51,35 @@
 
     .background-div {
     background-color: #999999;
-    width: 100%;
-    height: 57vh;
+    width: 70%;
+    height: 100%vh;
     margin: 5px auto;
     }
 
     .blogposts {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-gap: 20px;
-    padding: 76px 20px;
+    grid-template-columns: 1fr; 
+    grid-gap: 30px;
+    padding: 40px 20px;
+    
     }
     .post {
     border: 0px solid #000000;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 10px #000000;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 100fr; 
+    grid-gap: 20px;
+    
     }
+
+    .post img {
+    display: block; /* Сделать изображение блочным элементом */
+    margin: 0; /* Автоматическое выравнивание по горизонтали */
+
+    }
+
     .link {
     color: rgb(255, 255, 255);
     }
@@ -71,6 +88,7 @@
     text-align: center;
     position: relative;
     }
+    
     .info-container {
     height: 100%; 
     display: flex;
