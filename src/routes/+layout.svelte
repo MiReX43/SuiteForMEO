@@ -28,7 +28,7 @@
         },
         {
             title: 'Фильмы',
-            href: '/blog',
+            href: '/blogg',
             isShow: true,
         },
         {
